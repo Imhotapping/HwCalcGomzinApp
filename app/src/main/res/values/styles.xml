@@ -1,0 +1,60 @@
+<resources>
+    <!-- Базовая тема приложения -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Стиль для дисплея калькулятора -->
+    <style name="CalculatorDisplay">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/display_text</item>
+        <item name="android:background">@color/display_background</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Базовый стиль для кнопок -->
+    <style name="CalculatorButton">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button_calculator</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <!-- Стиль для цифровых кнопок -->
+    <style name="NumberButton" parent="CalculatorButton">
+        <item name="android:textColor">@color/number_button_text</item>
+        <item name="android:background">@drawable/button_number</item>
+    </style>
+
+    <!-- Стиль для кнопок операций -->
+    <style name="OperationButton" parent="CalculatorButton">
+        <item name="android:textColor">@color/operation_button_text</item>
+        <item name="android:background">@drawable/button_operation</item>
+    </style>
+
+    <!-- Стиль для кнопки равно -->
+    <style name="EqualsButton" parent="CalculatorButton">
+        <item name="android:textColor">@color/equals_button_text</item>
+        <item name="android:background">@drawable/button_equals</item>
+    </style>
+
+    <!-- Стиль для кнопок памяти -->
+    <style name="MemoryButton" parent="CalculatorButton">
+        <item name="android:textColor">@color/memory_button_text</item>
+        <item name="android:background">@drawable/button_memory</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Стиль для кнопки очистки -->
+    <style name="ClearButton" parent="CalculatorButton">
+        <item name="android:textColor">@color/clear_button_text</item>
+        <item name="android:background">@drawable/button_clear</item>
+    </style>
+</resources>
