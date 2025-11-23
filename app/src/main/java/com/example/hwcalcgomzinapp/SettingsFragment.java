@@ -39,7 +39,7 @@ public class SettingsFragment extends Fragment {
             viewModel.setUseFormulaMode(isChecked);
             preferences.edit().putBoolean("formula_mode", isChecked).apply();
 
-            // Показываем сообщение о изменении режима
+            // показываем сообщение о изменении режима
             if (getActivity() != null) {
                 String message = isChecked ?
                         "Режим формулы включен - вводите полные выражения" :
@@ -67,7 +67,7 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-        // Добавляем описание режимов
+        // добавляем описание режимов
         binding.textFormulaModeInfo.setText(
                 "• Последовательный режим: операции выполняются поочередно (как в стандартном калькуляторе)\n\n" +
                         "• Режим формулы: можно вводить сложные выражения (например: 2+3*4) которые вычисляются с учетом приоритета операций"

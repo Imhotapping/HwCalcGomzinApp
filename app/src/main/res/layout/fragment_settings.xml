@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="@dimen/_16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,25 +14,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Настройки калькулятора"
-            android:textSize="24sp"
+            android:textSize="@dimen/_24sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginBottom="@dimen/_32dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="@dimen/_16dp">
 
             <Switch
                 android:id="@+id/switch_formula_mode"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/_0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Режим расчета по формуле"
-                android:textSize="16sp" />
+                android:textSize="@dimen/_16sp" />
 
         </LinearLayout>
 
@@ -41,10 +41,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Описание режимов..."
-            android:textSize="14sp"
+            android:textSize="@dimen/_14sp"
             android:textColor="#666"
-            android:lineSpacingExtra="4dp"
-            android:layout_marginBottom="32dp" />
+            android:lineSpacingExtra="@dimen/_4dp"
+            android:layout_marginBottom="@dimen/_32dp" />
 
         <Button
             android:id="@+id/btn_reset_settings"

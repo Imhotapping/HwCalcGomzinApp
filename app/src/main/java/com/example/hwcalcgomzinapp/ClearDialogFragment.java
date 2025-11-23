@@ -17,12 +17,12 @@ public class ClearDialogFragment extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
         builder.setTitle("Очистка калькулятора")
                 .setMessage("Вы уверены, что хотите очистить все данные?")
-                .setPositiveButton("Очистить", (dialog, id) -> {
+                .setPositiveButton(R.string.Очистить, (dialog, id) -> {
                     CalculatorViewModel viewModel = new ViewModelProvider(requireActivity())
                             .get(CalculatorViewModel.class);
                     viewModel.clear();
                 })
-                .setNegativeButton("Отмена", (dialog, id) -> {
+                .setNegativeButton(R.string.Отмена, (dialog, id) -> {
                     dialog.cancel();
                 });
         return builder.create();

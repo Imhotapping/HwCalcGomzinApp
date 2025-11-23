@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="@dimen/_16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,28 +14,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="О приложении"
-            android:textSize="24sp"
+            android:textSize="@dimen/_24sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="@dimen/_16dp" />
 
         <TextView
             android:id="@+id/text_version"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Версия 1.0"
-            android:textSize="16sp"
+            android:textSize="@dimen/_16sp"
             android:gravity="center"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="@dimen/_24dp" />
 
         <TextView
             android:id="@+id/text_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Калькулятор с расширенными функциями:\n\n• Базовые операции (+, -, *, /)\n• Память калькулятора\n• Поддержка портретной и ландшафтной ориентации\n• Сохранение состояния\n• Два режима расчета\n\nРазработано с использованием:\n• ViewBinding\n• ViewModel\n• LiveData\n• Fragment"
-            android:textSize="14sp"
-            android:lineSpacingExtra="4dp"
-            android:layout_marginBottom="24dp" />
+            android:textSize="@dimen/_14sp"
+            android:lineSpacingExtra="@dimen/_4dp"
+            android:layout_marginBottom="@dimen/_24dp" />
 
         <Button
             android:id="@+id/btn_back"

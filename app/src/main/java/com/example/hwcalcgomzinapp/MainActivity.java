@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(binding.toolbar);
 
-        // Настройка кнопки меню - используем стандартную иконку
+        // настройка кнопки меню - используем стандартную иконку
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeAsUpIndicator(android.R.drawable.ic_menu_sort_by_size);
-            getSupportActionBar().setHomeActionContentDescription("Меню");
+            getSupportActionBar().setHomeActionContentDescription(R.string.Меню);
         }
 
         // Обработчик клика по иконке меню в тулбаре

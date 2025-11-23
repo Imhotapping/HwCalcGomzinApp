@@ -77,7 +77,7 @@ public class CalculatorViewModel extends ViewModel {
 
     public void calculate() {
         if (useFormulaMode) {
-            // Режим формулы: вычисляем все выражение
+            // режим формулы: вычисляем все выражение
             if (currentInput.length() == 0) return;
 
             try {
@@ -130,7 +130,7 @@ public class CalculatorViewModel extends ViewModel {
         }
     }
 
-    // Вспомогательные методы для режима формулы
+    // вспомогательные методы для режима формулы
     private boolean isOperator(char c) {
         return c == '+' || c == '-' || c == '*' || c == '/';
     }
@@ -146,7 +146,7 @@ public class CalculatorViewModel extends ViewModel {
             char c = expression.charAt(i);
 
             if (Character.isDigit(c) || c == '.') {
-                // Собираем число
+                // собираем число
                 StringBuilder sb = new StringBuilder();
                 while (i < expression.length() &&
                         (Character.isDigit(expression.charAt(i)) || expression.charAt(i) == '.')) {
@@ -156,7 +156,7 @@ public class CalculatorViewModel extends ViewModel {
                 i--;
                 numbers.push(Double.parseDouble(sb.toString()));
             } else if (isOperator(c)) {
-                // Обрабатываем операторы с учетом приоритета
+                // обрабатываем операторы с учетом приоритета
                 while (!operators.isEmpty() && hasPrecedence(c, operators.peek())) {
                     numbers.push(applyOperation(operators.pop(), numbers.pop(), numbers.pop()));
                 }
@@ -164,7 +164,7 @@ public class CalculatorViewModel extends ViewModel {
             }
         }
 
-        // Применяем оставшиеся операции
+        // применяем оставшиеся операции
         while (!operators.isEmpty()) {
             numbers.push(applyOperation(operators.pop(), numbers.pop(), numbers.pop()));
         }
