@@ -1,0 +1,6 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/display"/>
+    <GridLayout android:layout_height="wrap_content">
+        <!-- Кнопки калькулятора -->
+    </GridLayout>
+</LinearLayout>
